@@ -1,1 +1,20 @@
-# resume-matching-to-job-rss-feed
+# Resume Optimizstion to Job Feed
+In this project I scrape a job search feed and determine the fit to my resume and cover letter using natural language processing. The 'fit' between my resume + cover letter to the job description is determined via three methods;
+1. Keyword Analysis
+2. Similarity Scoring
+3. Generative Text Summary Comparisions
+
+## Job Feed Scapping
+I used the job search feed on [workopolis](https://www.workopolis.com/jobsearch/find-jobs?ak=data%20science%20-intern%20-co-op&l=Toronto%2C%20ON&sr=10&t=-1&mip=%24110%2C000&jt=fulltime&job=hWy0ea16-UMEAUzyNlvXuBmpMoyLsq-eKQFOamD-I625DcsvfyJLaPoYr3hHTpYO) as a source of data science jobs to compare to my resume+cover letter. The Beautiful Soup library was used to scrape the left navigation column to click through the feed pagination, extract the job link, open the job description and extract the job text. 
+![work-1](https://github.com/kconstable/resume-matching-to-job-rss-feed/assets/1649676/169417cc-9dab-47e0-81a6-513d770fdb17)
+
+
+## Resume Matching to Job Feed
+### Keyword Comparision
+![plot-keywords-2](https://github.com/kconstable/resume-matching-to-job-rss-feed/assets/1649676/1449bba6-a6c0-4fe5-845b-6da89720c042)
+
+### Similarity Scoring
+![similaryity-plots-3](https://github.com/kconstable/resume-matching-to-job-rss-feed/assets/1649676/5beb0070-a8cb-44ea-8137-de582620be55)
+
+### Summary of Match Results
+![table-summary](https://github.com/kconstable/resume-matching-to-job-rss-feed/assets/1649676/6ec24502-ab0e-42b1-8d79-920d0c0309d1)
