@@ -12,6 +12,8 @@ I used the job search feed on [workopolis](https://www.workopolis.com/jobsearch/
 ## Resume Matching to Job Feed
 ### Keyword Comparision
 To compare keywords, a list of common skills was compiled from a cross-secion of data science job postings. The list was then used to count the frequency of those skills in each job posting and in my resume+cover letter and compared.  The plot below shows the difference in the number of mentions of each skill compared to a specific job posting.  In the matching keywords plot, a bar greater than zero indicates my resume+cover-letter mentions that skill more than the job posting, and a negative job indicates the job posting has a greater freqeucy.  The missing keywords plot shows keywords in the job posting which are abscent from my resume, and the Job Specific keywords plot counts keywords that are highlighted in the job posting  (if applicable)
+
+The keyword coverage (# keywords in resume / # keywords in the job posting) is calculated and shown in the plot header, along with the weighted average keyword frequency.  This is a single score which calculates the sum of the differences in frequecy of each keyword, multiplied by the weight of thta keyword in the job posting.  A number larger than 1 indictes my resume has a higher overall frequecy of matches, while a score below 1 means there are some key keywords mentioned in the job posting that are not well represented in my resume. 
 ![plot-keywords-2](https://github.com/kconstable/resume-matching-to-job-rss-feed/assets/1649676/1449bba6-a6c0-4fe5-845b-6da89720c042)
 
 ### Similarity Scoring
