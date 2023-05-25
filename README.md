@@ -1,5 +1,5 @@
 # Resume Optimizstion to Job Feed
-In this project I scrape a job search feed and determine the fit to my resume and cover letter using natural language processing. The 'fit' between my resume + cover letter to the job description is determined via three methods;
+In this project I scrape a job search feed and determine the fit to my resume and cover letter to each job posting using natural language processing. The 'fit' between my resume + cover letter to the job description is determined via three methods;
 1. Keyword Analysis
 2. Similarity Scoring
 3. Generative Text Summary Comparisions
